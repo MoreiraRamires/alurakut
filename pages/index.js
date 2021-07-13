@@ -1,13 +1,24 @@
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
-import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
+import { AlurakutMenu, OrkutNostalgicIconSet,AlurakutProfileSidebarMenuDefault } from '../src/lib/AlurakutCommons';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 
 function ProfileSidebar(propriedades) {
+    
   console.log(propriedades);
-  return (
+  
+  return (    
     <Box>
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{ borderRadius: '8px' }} />
+      <hr/>
+      <p>
+        <a href={`https://github.com/${propriedades.githubUser}`} clasName="boxLink">
+          @{propriedades.githubUser}
+        </a>
+      </p>
+
+      <hr/>
+      <AlurakutProfileSidebarMenuDefault/>
     </Box>
   )
 }
@@ -22,6 +33,8 @@ export default function Home() {
     'marcobrunodev',
     'felipefialho'
   ]
+
+  
 
   return (
     <>
