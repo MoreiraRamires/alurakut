@@ -9,9 +9,7 @@
 <p align="center">
 	
 ## 💻 Sobre o Projeto
-Neste projeto em React.JS criamo suma forma nostalgica de relembrar grandes momentos que muitos passaram no Orkut. 
-O AluraKut
-
+Neste projeto em React.JS criamos o AluraKut uma forma nostalgica de relembrar grandes momentos que muitos passaram no Orkut. 
 	
 ## 🛠 Tecnologias
 Abaixo segue o que foi utilizado na criação deste projeto:
