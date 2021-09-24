@@ -12,15 +12,7 @@
 Neste projeto em React.JS criamo suma forma nostalgica de relembrar grandes momentos que muitos passaram no Orkut. 
 O AluraKut
 
-  
-## 🎨 Layout
-
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/Mnr08FcriAibSOheL0XvrY/Discord-Clone?node-id=0%3A1">
-  <img alt="Made by Rafael Ramires" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
-
+	
 ## 🛠 Tecnologias
 Abaixo segue o que foi utilizado na criação deste projeto:
 -  [ReactJS](https://reactjs.org/)
