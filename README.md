@@ -1,84 +1,63 @@
-# Example app with styled-components
+<h1 align="center">
+    <img alt="AluraKut" title="#AluraKut" src="./assets/banner.png" />
+</h1>
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<h4 align="center"> 
+	AluraKut
+</h4>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+<p align="center">
+	
+## 💻 Sobre o Projeto
+Neste projeto em React.JS criamo suma forma nostalgica de relembrar grandes momentos que muitos passaram no Orkut. 
+O AluraKut
 
-## Preview
+  
+## 🎨 Layout
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+O layout da aplicação está disponível no Figma:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
+<a href="https://www.figma.com/file/Mnr08FcriAibSOheL0XvrY/Discord-Clone?node-id=0%3A1">
+  <img alt="Made by Rafael Ramires" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+</a>
 
-## Deploy your own
+## 🛠 Tecnologias
+Abaixo segue o que foi utilizado na criação deste projeto:
+-  [ReactJS](https://reactjs.org/)
+-  [Styled-components](https://www.styled-components.com/)
+-  [NextJS](https://nextjs.org/)
+-  [Vercel](https://vercel.com/)
+</p>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+## 🚀 Como executar o projeto
 
-## How to use
+1. Copie ou clone os arquivos deste repositório para uma pasta local.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+2. Acesse a pasta local do projeto através de um terminal e faça a instalação das dependências usando o comando:
+```sh
+$ npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
+1. Ainda na pasta local do projeto execute o comando:
+```sh
+$ npm start
 ```
 
-**pages/index.js**
+A aplicação é geralmente iniciada no endereço: `http://localhost:3000` e utiliza dados estáticos que estão em um array no arquivo `api.js` na pasta `services`.
 
-```javascript
-import StyledLink from '../components/StyledLink'
 
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
+## 😯 Como contribuir para o projeto
 
-</details>
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
+
+
+## 📝 Licença
+
+Este projeto esta sobe a licença MIT.
+
+Feito com ❤️ por Rafael Ramires 👋🏽 [Entre em contato!](https://www.linkedin.com/in/rafael-ramires-791aa378/)
